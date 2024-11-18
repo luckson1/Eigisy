@@ -547,7 +547,7 @@ function FAQSection() {
   ];
 
   return (
-    <section id="faqs" className="py-24 bg-white">
+    <section id="#faqs" className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-3xl font-bold mb-16">
           Frequently Asked Questions
