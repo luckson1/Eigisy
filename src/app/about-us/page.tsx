@@ -49,29 +49,40 @@ export default function AboutUsPage() {
         <h2 className="text-3xl font-semibold text-center">Our Story</h2>
         <Card>
           <CardContent className="p-6">
-            <h3 className="text-2xl font-semibold mb-4">
-              A New Chapter in Digital Marketing
-            </h3>
+            <h3 className="text-2xl font-semibold mb-4">Our Story</h3>
             <p className="mb-4">
-              Eigisy was born in 2023 from a shared vision: to revolutionize the
-              digital marketing landscape for UK businesses. Our founders, Bob
-              and Billy, saw a gap in the market for a truly data-driven,
-              innovative approach to digital marketing.
+              In a digital world brimming with noise, we saw a challenge—and an
+              opportunity. As seasoned marketers and passionate storytellers, we
+              noticed something missing: an integrated, human-centered approach
+              to digital marketing that does not just focus on metrics but on
+              real connections and lasting impact.
             </p>
             <p className="mb-4">
-              With over two decades of combined experience in top London
-              agencies, Bob and Billy decided it was time to break free from
-              conventional methods. They believed that by combining cutting-edge
-              technology with creative strategies, they could deliver
-              unparalleled results for businesses of all sizes.
+              That is why we created Eigisy—a digital marketing agency built on
+              the belief that every brand has a story worth telling and an
+              audience ready to listen. Our mission is simple: to empower
+              businesses of all sizes with innovative, data-driven strategies
+              that spark growth and drive results.
+            </p>
+            <p className="mb-4">
+              We started with a small team and a big dream: to blend creativity
+              with analytics, strategy with execution, and cutting-edge
+              technology with timeless storytelling. From mastering SEO to
+              leveraging influencer collaborations and creating compelling
+              content, we have built a full-service agency that thrives on helping
+              brands stand out, scale up, and make their mark in the digital
+              landscape.
             </p>
             <p>
-              Today, we&apos;re a small but mighty team of digital enthusiasts,
-              working tirelessly from our co-working space in the heart of
-              London&apos;s tech hub. We&apos;re on a mission to prove that you
-              don&apos;t need to be a giant agency to make a giant impact in the
-              digital world.
+              What sets us apart is not just our expertise—it is our commitment.
+              We see your success as our success, and every campaign we create
+              is a reflection of our dedication to your vision.
             </p>
+            <p>
+              Welcome to Eigisy—where your story becomes the spark for something
+              extraordinary.
+            </p>
+            <p>Let us grow together.</p>
           </CardContent>
         </Card>
       </motion.section>
@@ -176,59 +187,6 @@ export default function AboutUsPage() {
               </CardContent>
             </Card>
           </motion.div>
-        </div>
-      </motion.section>
-
-      {/* Our Team Section */}
-      <motion.section
-        className="space-y-8"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <h2 className="text-3xl font-semibold text-center">
-          Meet Our Founders
-        </h2>
-        <div className="grid gap-6 md:grid-cols-2">
-          {[
-            {
-              name: "Bob Ondago",
-              role: "Co-Founder & CEO",
-              image: "/placeholder.svg?height=300&width=300",
-              bio: "With a background in data science and digital marketing, Bob is the driving force behind Eigisy's innovative strategies.",
-            },
-            {
-              name: "Billy Ondago",
-              role: "Co-Founder & CMO",
-              image: "/placeholder.svg?height=300&width=300",
-              bio: "Billy brings his expertise in AI and machine learning to revolutionize how we approach digital marketing challenges.",
-            },
-          ].map((member, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <Card>
-                <CardContent className="p-6 flex flex-col items-center text-center">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={`https://api.dicebear.com/5.x/avataaars/svg?seed=${member.name}`}
-                    alt={member.name}
-                    width={200}
-                    height={200}
-                    className="rounded-full mb-4"
-                  />
-                  <h3 className="text-xl font-semibold">{member.name}</h3>
-                  <p className="text-muted-foreground mb-2">{member.role}</p>
-                  <p>{member.bio}</p>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
         </div>
       </motion.section>
 
