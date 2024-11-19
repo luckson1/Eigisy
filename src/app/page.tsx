@@ -88,7 +88,7 @@ const testimonials: Testimonial[] = [
 
 function HeroSection() {
   return (
-    <section className="container mx-auto px-4 py-16 md:py-24">
+    <section className="container mx-auto px-4 py-16 md:py-24 bg-gradient-to-r from-transparent via-primary/20 to-transparent">
       <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
         <motion.div
           className="flex flex-col justify-center space-y-8"
@@ -112,18 +112,28 @@ function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            Grow revenue with powerful marketing
+            Empower Your Brand with Cutting-Edge Digital Marketing!
           </motion.h1>
 
-          <motion.p
+          <motion.div
             className="text-xl text-gray-600"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            Marketing is more powerful and effective and efficient for your
-            business growth with Eigisy.
-          </motion.p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>🔍 SEO – Rank higher, drive more traffic.</li>
+              <li>📱 Social Media – Build connections that convert.</li>
+              <li>✍️ Content Marketing – Inspire engagement and loyalty.</li>
+              <li>
+                ⭐ Influencer Marketing – Leverage trusted voices to amplify
+                your reach.
+              </li>
+              <li>
+                📊 Marketing Analytics – Make data-driven decisions that matter.
+              </li>
+            </ul>
+          </motion.div>
 
           <motion.div
             className="flex flex-wrap gap-4"
